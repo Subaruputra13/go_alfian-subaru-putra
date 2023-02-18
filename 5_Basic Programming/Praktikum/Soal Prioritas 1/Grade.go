@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	nilai := 75
 
-	if nilai < 100 && nilai >= 80 {
+	if nilai <= 100 && nilai >= 80 {
 		fmt.Println("Nilai Anda A")
 	} else if nilai <= 79 && nilai >= 65 {
 		fmt.Println("Nilai Anda B")
