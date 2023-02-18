@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	nilai := 101
+	nilai := 75
 
 	if nilai < 100 && nilai >= 80 {
 		fmt.Println("Nilai Anda A")
