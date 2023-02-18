@@ -1,4 +1,4 @@
-** Review Algorithma**
+** REVIEW ALGORITHMA**
 
 Pada pertemuan Section 4 mempelajari tentang :
 
