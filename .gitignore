@@ -1,5 +1,3 @@
-# vscode-go
-.vscode/
-
-# Goland
 go.mod
+
+.vscode/
