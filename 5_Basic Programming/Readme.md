@@ -78,11 +78,11 @@ Data Types :
 
 Type Declaration :
 <br>
-==> var (variable_name) (type_data)
+==> `var (variable_name) (type_data)`
 <br>
-==> var (variable_name) (type_data) = (value)
+==> `var (variable_name) (type_data) = (value)`
 <br>
-==> (variable_name) := (value)
+==> `(variable_name) := (value)`
 <br>
 <br>
 
