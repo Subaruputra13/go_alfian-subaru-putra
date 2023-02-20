@@ -60,7 +60,7 @@ Format Verb : %T, %v, %s, %q, %d
 </details>
 
 <details>
-<summarys>3. VARIABLE, TYPES & ZERO VALUES</summarys>
+<summary>3. VARIABLE, TYPES & ZERO VALUES</summary>
 <br>
 Variable digunakan untuk menyimpan informasi dalam program komputer, mereka menyediakan cara pelabelan data dengan nama deskriptif dan mereka memiliki tipe data (Integer, String, Boolean)
 <br>
