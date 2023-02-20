@@ -27,7 +27,7 @@ Kegunaan Algorimta terdiri dari :
 </details>
 
 <details>
-<summary>2. Pseudocode</summary>
+<summary>2. PSEUDOCODE</summary>
 <br>
 Pseudocode adalah deskripsi tingkat tinggi bersifat informal dan ringkas atas algoritma pemrograman komputer yang menggunakan konvensi struktural atas suatu bahasa pemrograman dengan tujuan untuk dibaca oleh manusia dan bukan mesin.
 <br>
@@ -39,4 +39,23 @@ LUAS MENGHITUNG SEGITIGA :
 2. CALCULATE `Luas = (Alas x Tinggi) / 2`
 <br>
 3. PRINT `Luas`
+</details>
+
+<details>
+<summary>3. FLOWCHART<summary>
+<br>
+Flowchart adalah suatu bagan dengan simbol tertentu yang menggambarkan urutan proses secara detail, Flowchart pun banyak bentuknya dan cara penggunaannya.
+<br>
+<br>
+Simbol - Simbol Flowchart :
+<br>
+-> Bentuk Oval(Terminator) = untuk memulai/mengakhiri pada proses flowchart
+<br>
+-> Bentuk PersegiPanjang(Processing) = untuk menunjukkan pengolahan yang dilakukan oleh komputer.
+<br>
+-> Bentuk JajarGenjang(Input/Output) = untuk menyatakan proses input dan output tanpa tergantung dengan jenis peralatanya.
+<br>
+-> Bentuk BelahKetupat(Decision) = untuk pemilihan proses berdasarkan kondisi yang ada/ditentukan.
+<br>
+-> Bentuk SegiEnam(Looping) = untuk menyatakan penyediaan tempat penyimpanan suatu pengolahan untuk memberi harga awal.
 </details>
