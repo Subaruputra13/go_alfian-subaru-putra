@@ -102,12 +102,9 @@ Membuat Source Code _===>_ Compile _===>_ Menajalankan Sourcode yang sudah di co
 Contohnya :
 <br>
 
-- Boolean = false
-- <br>
+- Boolean = false3
 - Float = 0.0
-- <br>
 - Integer = 0
-- <br>
 - String = ""
 <br>
 <br>
