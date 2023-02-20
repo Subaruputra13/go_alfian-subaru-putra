@@ -18,8 +18,6 @@ Pada pertemuan Section 5 mempelajari tentang :
 
 ### Jalur untuk Mengompiler sebuah program adalah :
 
-<br>
-
 Membuat Source Code _===>_ Compile _===>_ Menajalankan Sourcode yang sudah di compile dan akan menghasilkan Output.
 <br>
 <br>
@@ -101,7 +99,6 @@ Membuat Source Code _===>_ Compile _===>_ Menajalankan Sourcode yang sudah di co
 
 ### Zero Value adalah Default Value yang ada di tipe-tipe data
 
-<br>
 Contohnya :
 <br>
 
@@ -112,7 +109,140 @@ Contohnya :
 - Integer = 0
 - <br>
 - String = ""
+<br>
+<br>
+</details>
+
+<details>
+<summary>4. OPERATOR MATEMATIKA</summary>
+<br>
+
+- `+`(Addition) = Operator nambahan
+- `-`(Subtraction) = Operator pengurangan
+- `/`(Division) = Operator pembagian
+- `*`(Multiplication) = Operator perkalian
+- `%`(Modulo) = Operator sisa hasil bagi
+- `++`(Increment) = Operator untuk menambahan keatas
+- `--`(Decremnet) = Operator untuk mengurangi kebawah
   <br>
   <br>
+
+### Operator di Golang :
+
+- Arihmetic = `+`, `-`, `\*`, `/`, `%`, `++`, `--`
+  <br>
+
+- Comparison = `==`, `!=`, `>`, `<`, `>=`, `<=`
+  <br>
+
+- Logical = `&&`, `||`, `!`
+  <br>
+
+- Bitwise = `&`, `|`, `^`, `<<` , `>>`
+  <br>
+
+- Assigment = `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `<<=`, `>>=`, `&=`, `^=`, `|=`
+  <br>
+
+- Miscellaneous = `&`(array), `*`(pointer)
+</details>
+
+<details>
+<summary>5. CONTROL STRUCTURE BRANCHING & LOOPING<summary>
+
+Hanya ada beberapa Struktur Control di Go, untuk bercabang kita menggunakan `IF` dan `SWITCH` , untuk perulangan loop kita menggunakan `FOR`
+
+### Contoh IF Statment :
+
+```go
+var umur = 17
+
+if umur >= 5 {
+    fmt.Println("Anda Masih Muda")
+}
+
+if umurayah := 9; umurayah < umur {
+    fmt.Println(umurayah)
+}
+```
+
+<br>
+<br>
+
+### Contoh IF ELSE Statment :
+
+```go
+jam := 15
+
+if jam < 12 {
+    fmt.Println("Selamat Pagi")
+}else if jam < 18 {
+    fmt.Println("Selamat Sore")
+}else {
+    fmt.Println("Selamat malam")
+}
+```
+
+`Output : Selamat Sore`
+<br>
+<br>
+
+### Contoh Nested IF Statment :
+
+```go
+var v1 int = 400
+var v2 int = 700
+
+if v1 == 400 {
+    if v2 == 700 {
+        fmt.Println("Value of v1 is 400 abd v2 is 700")
+    }
+}
+```
+
+<br>
+<br>
+
+### Contoh SWICTH Statment :
+
+```go
+var today int = 2
+
+switch today {
+    case 1:
+        fmt.Println("Today is Monday")
+    case 2:
+        fmt.Println("Tooday is Tuesday")
+    case 3:
+        fmt.Println("Invalid Date")
+}
+```
+
+`Output : Today is Tueday`
+<br>
+<br>
+
+### Contoh LOOP Statment :
+
+```go
+package main
+
+import "fmt"
+
+func main(){
+    for i:=0;i < 5;i++{
+        fmt.Println(i)
+    }
+}
+```
+
+`Output :`
+`0`
+`1`
+`2`
+`3`
+`4`
+<br>
+<br>
 
 </details>
