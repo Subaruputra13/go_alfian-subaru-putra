@@ -2,7 +2,7 @@
 
 Pada pertemuan Section 5 mempelajari tentang :
 
-<details>
+<details open>
 <summary>1. PENGENALAN GOLANG</summary>
 <br>
 + Golang adalah bahasa pemrograman yang tujuan umum nya membuat programmer mudah membuat, sederhana dan perangkat lunak yang efisien.
@@ -20,6 +20,7 @@ Jalur untuk Mengompiler sebuah program adalah :
 Membuat Source Code ===> Compile ===> Menajalankan Sourcode yang sudah di compile dan akan menghasilkan Output.
 <br>
 <br>
+
 Command Go Terminal :
 <br>
 -> go run = Menjalankan program tanpa build
@@ -46,10 +47,58 @@ Output :
   - fmt.Sprintf() = Untuk mencetak String dan mendeklarasikan  format verb String
   <br>
   <br>
+
 Scanning :
+<br>
+
+- fmt.Scanln() = Untuk membuat inputan
   <br>
-  - fmt.Scanln() = Untuk membuat inputan
   <br>
-  <br>
+
 Format Verb : %T, %v, %s, %q, %d
+
+</details>
+
+<details>
+<summarys>3. VARIABLE, TYPES & ZERO VALUES</summarys>s
+<br>
+Variable digunakan untuk menyimpan informasi dalam program komputer, mereka menyediakan cara pelabelan data dengan nama deskriptif dan mereka memiliki tipe data (Integer, String, Boolean)
+<br>
+<br>
+
+Data Types :
+<br>
+-> Boolean = True dan False
+<br>
+-> Numeric = Interger, Float, Complex
+<br>
+-> String
+<br>
+<br>
+
+Type Declaration :
+<br>
+==> var (variable_name) (type_data)
+<br>
+==> var (variable_name) (type_data) = (value)
+<br>
+==> (variable_name) := (value)
+<br>
+<br>
+
+Zero Value adalah Default Value yang ada di tipe-tipe data
+<br>
+Contohnya :
+<br>
+
+- Boolean = false
+- <br>
+- Float = 0.0
+- <br>
+- Integer = 0
+- <br>
+- String = ""
+  <br>
+  <br>
+
 </details>
