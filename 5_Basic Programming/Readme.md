@@ -33,3 +33,9 @@ Command Go Terminal :
 -> go get = Untuk mendowload Go package
 
 </details>
+
+<details>
+<summary>2. PACKAGE "FMT"</summary>
+<br>
+
+</details>
