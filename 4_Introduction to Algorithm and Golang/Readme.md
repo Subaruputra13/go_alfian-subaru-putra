@@ -51,11 +51,11 @@ Simbol - Simbol Flowchart :
 <br>
 -> Bentuk Oval(Terminator) = untuk memulai/mengakhiri pada proses flowchart
 <br>
--> Bentuk PersegiPanjang(Processing) = untuk menunjukkan pengolahan yang dilakukan oleh komputer.
+-> Bentuk Persegi Panjang(Processing) = untuk menunjukkan pengolahan yang dilakukan oleh komputer.
 <br>
--> Bentuk JajarGenjang(Input/Output) = untuk menyatakan proses input dan output tanpa tergantung dengan jenis peralatanya.
+-> Bentuk Jajar Genjang(Input/Output) = untuk menyatakan proses input dan output tanpa tergantung dengan jenis peralatanya.
 <br>
--> Bentuk BelahKetupat(Decision) = untuk pemilihan proses berdasarkan kondisi yang ada/ditentukan.
+-> Bentuk Belah Ketupat(Decision) = untuk pemilihan proses berdasarkan kondisi yang ada/ditentukan.
 <br>
--> Bentuk SegiEnam(Looping) = untuk menyatakan penyediaan tempat penyimpanan suatu pengolahan untuk memberi harga awal.
+-> Bentuk Segi Enam(Looping) = untuk menyatakan penyediaan tempat penyimpanan suatu pengolahan untuk memberi harga awal.
 </details>
