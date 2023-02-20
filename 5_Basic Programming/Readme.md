@@ -246,4 +246,46 @@ func main(){
 <br>
 <br>
 
+### Contoh LOOP String Statment :
+
+```go
+package main
+
+import "fmt"
+
+func main(){
+    sentence := "Hello";
+
+    for i:=0; i < len(sentence); i++ {
+        fmt.Println(string(sentence[i]))
+    }
+
+    for pos, char := range sentence {
+        fmt.Printf("character %c starts at byt position %d", char, pos)
+    }
+}
+```
+
+<br>
+<br>
+
+### Contoh Advance LOOPING :
+
+```go
+package main
+
+import "fmt"
+
+func main(){
+    n := 5
+
+    for i := 0; i < n; i++ {
+        for j := 0; j <= i ; j++ {
+            fmt.Print("*")
+        }
+        fmt.Println()
+    }
+}
+```
+
 </details>
