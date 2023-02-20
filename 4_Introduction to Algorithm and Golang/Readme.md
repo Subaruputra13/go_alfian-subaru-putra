@@ -27,7 +27,7 @@ Kegunaan Algorimta terdiri dari :
 </details>
 
 <details>
-<summary>Pseudocode<summary>
+<summary>Pseudocode</summary>
 <br>
 Pseudocode adalah deskripsi tingkat tinggi bersifat informal dan ringkas atas algoritma pemrograman komputer yang menggunakan konvensi struktural atas suatu bahasa pemrograman dengan tujuan untuk dibaca oleh manusia dan bukan mesin.
 <br>
