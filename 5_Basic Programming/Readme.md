@@ -6,13 +6,13 @@ Pada pertemuan Section 5 mempelajari tentang :
 <summary>1. PENGENALAN GOLANG</summary>
 <br>
 
-- _Golang_ adalah bahasa pemrograman yang tujuan umum nya membuat programmer mudah membuat, sederhana dan perangkat lunak yang efisien.
+- **Golang** adalah bahasa pemrograman yang tujuan umum nya membuat programmer mudah membuat, sederhana dan perangkat lunak yang efisien.
   <br>
-- _Golang_ adalah bahasa yang bagus untuk program tingkat rendah yang menyediakan layanan ke sistem lain yang disebut System Programming.
+- **Golang** adalah bahasa yang bagus untuk program tingkat rendah yang menyediakan layanan ke sistem lain yang disebut System Programming.
   <br>
-- _Application Programs_ : E-commers, Music Player, Social Media Apps.
+- **Application Programs** : E-commers, Music Player, Social Media Apps.
   <br>
-- _System Programs_ : APIs, Game engines, CLI apps.
+- **System Programs** : APIs, Game engines, CLI apps.
   <br>
   <br>
 
@@ -24,7 +24,8 @@ Membuat Source Code _===>_ Compile _===>_ Menajalankan Sourcode yang sudah di co
 <br>
 <br>
 
-Command Go Terminal :
+### Command Go Terminal :
+
 <br>
 
 -> `go run` = Menjalankan program tanpa build
@@ -46,8 +47,9 @@ Command Go Terminal :
 <details>
 <summary>2. PACKAGE "FMT"</summary>
 <br>
-Output :
-  <br>
+
+**Output** :
+<br>
 
 - `fmt.Printf()` = Untuk mendeklarasikan format verb
   <br>
@@ -57,25 +59,26 @@ Output :
   <br>
   <br>
 
-Scanning :
+**Scanning** :
 <br>
 
 - `fmt.Scanln()` = Untuk membuat inputan
   <br>
   <br>
 
-Format Verb : %T, %v, %s, %q, %d
+**Format Verb** : %T, %v, %s, %q, %d
 
 </details>
 
 <details>
 <summary>3. VARIABLE, TYPES & ZERO VALUES</summary>
 <br>
-Variable digunakan untuk menyimpan informasi dalam program komputer, mereka menyediakan cara pelabelan data dengan nama deskriptif dan mereka memiliki tipe data (Integer, String, Boolean)
+
+**Variable** digunakan untuk menyimpan informasi dalam program komputer, mereka menyediakan cara pelabelan data dengan nama deskriptif dan mereka memiliki tipe data (Integer, String, Boolean)
 <br>
 <br>
 
-Data Types :
+**Data Types** :
 <br>
 -> Boolean = True dan False
 <br>
@@ -85,17 +88,21 @@ Data Types :
 <br>
 <br>
 
-Type Declaration :
+**Type Declaration** :
 <br>
+
 ==> `var (variable_name) (type_data)`
 <br>
+
 ==> `var (variable_name) (type_data) = (value)`
 <br>
+
 ==> `(variable_name) := (value)`
 <br>
 <br>
 
-Zero Value adalah Default Value yang ada di tipe-tipe data
+### Zero Value adalah Default Value yang ada di tipe-tipe data
+
 <br>
 Contohnya :
 <br>
