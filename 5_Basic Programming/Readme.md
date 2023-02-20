@@ -37,7 +37,7 @@ Command Go Terminal :
 <details>
 <summary>2. PACKAGE "FMT"</summary>
 <br>
-- Output :
+Output :
   <br>
   - fmt.Printf() = Untuk mendeklarasikan format verb
   <br>
@@ -45,9 +45,11 @@ Command Go Terminal :
   <br>
   - fmt.Sprintf() = Untuk mencetak String dan mendeklarasikan  format verb String
   <br>
-- Scanning :
+  <br>
+Scanning :
   <br>
   - fmt.Scanln() = Untuk membuat inputan
   <br>
-- Format Verb : %T, %v, %s, %q, %d
+  <br>
+Format Verb : %T, %v, %s, %q, %d
 </details>
