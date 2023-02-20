@@ -42,7 +42,7 @@ LUAS MENGHITUNG SEGITIGA :
 </details>
 
 <details>
-<summary>3. FLOWCHART<summary>
+<summary>3. FLOWCHART</summary>
 <br>
 Flowchart adalah suatu bagan dengan simbol tertentu yang menggambarkan urutan proses secara detail, Flowchart pun banyak bentuknya dan cara penggunaannya.
 <br>
