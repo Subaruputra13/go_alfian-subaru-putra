@@ -149,6 +149,7 @@ Contohnya :
 
 <details>
 <summary>5. CONTROL STRUCTURE BRANCHING & LOOPING<summary>
+<br>
 
 Hanya ada beberapa Struktur Control di Go, untuk bercabang kita menggunakan `IF` dan `SWITCH` , untuk perulangan loop kita menggunakan `FOR`
 
