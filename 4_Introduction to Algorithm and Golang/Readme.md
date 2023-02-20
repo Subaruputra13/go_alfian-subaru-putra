@@ -1,4 +1,4 @@
-## RANGKUMAN Introduction to Algorithm and Golang
+## RANGKUMAN INTRODUCTION TO ALGORITHM AND GOLANG
 
 Pada pertemuan Section 4 mempelajari tentang :
 

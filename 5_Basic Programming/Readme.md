@@ -1,7 +1,35 @@
-** REVIEW BASIC PROGRAMMING**
+## RANGKUMAN BASIC PROGRAMMING
 
 Pada pertemuan Section 5 mempelajari tentang :
 
-- Mempelajari tentang Tipe Data dan membuat Variable
-- Mempelajari Operator Matematika di bahasa Golang
-- Mempelajari Control Structures terdiri dari Branching(IF) dan Looping(For)
+<details>
+<summary>1. PENGENALAN GOLANG</summary>
+<br>
++ Golang adalah bahasa pemrograman yang tujuan umum nya membuat programmer mudah membuat, sederhana dan perangkat lunak yang efisien
+  <br>
++ Golang adalah bahasa yang bagus untuk program tingkat rendah yang menyediakan layanan ke sistem lain yang disebut System Programming
+  <br>
++ Application Programs : E-commers, Music Player, Social Media Apps
+  <br>
++ System Programs : APIs, Game engines, CLI apps
+  <br>
+  <br>
+
+Jalur untuk Mengompiler sebuah program adalah :
+<br>
+Membuat Source Code ===> Compile ===> Menajalakan Sourcode yang sudah di compile dan akan menghasilkan Output.
+<br>
+<br>
+Command Go Terminal :
+<br>
+-> go run = Menjalankan program tanpa build
+<br>
+-> go build = Mengcompile program
+<br>
+-> go install = Sama seperti go build dan dilanjutkan dengan install process
+<br>
+-> go test = Untuk mengetest dengan suffix_test.go
+<br>
+-> go get = Untuk mendowload Go package
+
+</details>
