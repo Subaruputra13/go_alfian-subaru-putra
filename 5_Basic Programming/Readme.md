@@ -26,8 +26,6 @@ Membuat Source Code _===>_ Compile _===>_ Menajalankan Sourcode yang sudah di co
 
 ### Command Go Terminal :
 
-<br>
-
 -> `go run` = Menjalankan program tanpa build
 <br>
 
