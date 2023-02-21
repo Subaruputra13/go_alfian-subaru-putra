@@ -1,6 +1,6 @@
 # RANGKUMAN VERSION CONTROL AND BRANCH MANAGEMENT(GIT)
 
-<details>
+<details open>
 <summary>1. VERSIONING</summary>
 <br>
 
@@ -34,13 +34,31 @@
 <br>
 
 - `git config` = Perintah untuk mengatur konfigurasi sesuai keinginan. Contoh : buka terminal lalu ketik git `config --global namaUser`
+  <br>
+
 - `git init` = Perintaah untuk membuat repository baru, Contohnya Arahkan ke folder project dan bukan terminal ketik `git init`
+  <br>
+
 - `git add` = Perintah yang biasa digunakan untuk menambah file ke index/StagingArea. Contoh : lakukan perubahan di repository lalu ketik `git add */namaFile`. `git add .` digunakan jika ingin memasukkan semua perubahan file yang ada di repository tersebut.
+  <br>
+
 - `git commit` = Perintah untuk melakukan commit pada perubahan, perubahan yang dilakukan di commit tidak akan langsung masuk ke remote repository. Contoh : ketik `git commit -m "fisrt commit"`
+  <br>
+
 - `git status` = Perintah untuk menampilakn daftar file yang berubah. Contoh : ketikkan `git status`
+  <br>
+
 - `git checkout` = Perintah untuk membuat branch ataupun berpindah branch(cabang). Contoh : Apabila ingin berpindah dari branch main ke branch development maka gunakan perintah git checkout development
+  <br>
+
 - `git pull` = Perintah untuk menggabungkan semua perubahan yang ada di remote repository ke dalam direktori lokal. Contoh: ketik `git pull`
+  <br>
+
 - `git merge` = Perintah untuk menggabungkan satu ke branch lain yang aktif. Contoh : `git merge namaBranch`
+  <br>
+
 - `git reset` = Perintah untuk mengulang/reset index. Di git reset ini terdapat dua opsi yaitu reset hard ataupun reset soft. Contoh: `git reset --hard`
+  <br>
+
 - `git rm` -> Perintah untuk menghapus/remove file dari index dan direkotri. Contoh: `git rm namaFile/namaFolder`
 </details>
