@@ -13,11 +13,11 @@ Pada pertemuan Section 4 mempelajari tentang :
 **Contoh Dari Algoritma itu ada 3 :**
 <br>
 
-1. Squential adalah algoritma yang langsung di process
+1. Squential adalah algoritma yang langsung di process.
 
-2. Branching adalah algoritma yang menggunakan kondisi terlebih dahulu kemudian di process
+2. Branching adalah algoritma yang menggunakan kondisi terlebih dahulu kemudian di process.
 
-3. Looping adalah algoritma yang menggunkana perulangan terlebih dahulu kemudian di process
+3. Looping adalah algoritma yang menggunkana perulangan terlebih dahulu kemudian di process.
    <br>
    <br>
 
