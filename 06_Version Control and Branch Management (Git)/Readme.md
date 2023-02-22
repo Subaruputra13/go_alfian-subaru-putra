@@ -15,9 +15,9 @@
 **Git Apple :**
 
 1. Download git terbaru melalui Mac di website https://git-scm.com/download/mac
-2. Mengikuti tutorialnya untuk menginstall git
+2. Mengikuti tutorialnya untuk menginstall git.
 3. Buka terminal dan ketik `git --version`
-4. kalau muncul versi dari gitu yang di instal berarti penginstallan git pada Mac sudah berhasil
+4. kalau muncul versi dari gitu yang di instal berarti penginstallan git pada Mac sudah berhasil.
    <br>
    <br>
 
