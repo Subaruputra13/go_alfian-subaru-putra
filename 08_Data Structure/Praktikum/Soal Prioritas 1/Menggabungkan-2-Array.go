@@ -13,7 +13,7 @@ func ArrayMerge(arrayA, arrayB []string) []string {
 		// Jika map kosong, maka isi map dengan nilai true
 		if !isExist[v] {
 			isExist[v] = true
-			// Jika map sudah terisi, maka isi array kosong dengan nilai yang sudah ada di map
+			// mengisi array kosong dengan nilai dari array yang sudah digabung
 			result = append(result, v)
 		}
 	}
