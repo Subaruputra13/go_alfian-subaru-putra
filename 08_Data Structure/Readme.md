@@ -120,6 +120,118 @@ for range primes {
 
 <details>
 <summary>2. SLICE</summary>
+<br>
+
+**Slice** adalah struktur data yang berisi sekelompok elemen, dapat berisi satu jenis variable (seperti Array) tetapi memilki ukuran alokasi yang dinamis. Slice sebernarnya bukan Array Dinamic. Slice dideklrasikan seperti array keculia tidak menentukan ukuran apapun dalam tanda kurung `[]`
+<br>
+
+### Membuat Slice dari Array
+
+```go
+package main
+
+import (
+  "fmt"
+  "reflect"
+)
+
+func main() {
+  // Pembuatan Array
+  var primes = [5]int{2, 3, 5, 7, 11}
+
+  // Pembuatan slice yang mengambil value dari Array
+  var part_primes []int = primes[1:4]
+
+  // menambah data ke slice akan menambah data ke array juga
+  fmt.Println(reflect.ValueOf(part_primes).Kind())
+  fmt.Println(part_primes)
+}
+```
+
+`Output : Slice [3 5 7]`
+<br>
+
+### Mendeklrasikan Slice
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  // long declaration
+  var even_numbers []int
+  fmt.Printf("elements = %v, len = %d, cap = %d\n", even_numbers, len(even_numbers), cap(even_numbers))
+
+  // long declaration with values
+  var odd_numbers = []int{1, 3, 5, 7, 9}
+  fmt.Printf("elements = %v, len = %d, cap = %d\n", odd_numbers, len(odd_numbers), cap(odd_numbers))
+
+  // short declaration with values
+  numbers := []int{1, 2, 3, 4, 5}
+  fmt.Printf("elements = %v, len = %d, cap = %d\n", numbers, len(numbers), cap(numbers))
+
+  // using make function
+  var primes = make([]int, 5, 10)
+  fmt.Printf("elements = %v, len = %d, cap = %d\n", primes, len(primes), cap(primes))
+}
+```
+
+<br>
+
+### Menggunakan Keyword MAKE()
+
+- `func make([] T, len, cap) []T`
+- `Make()` memungkinkan kita untuk membuat irisan ketika mendasari larik tidak ditentukan
+  <br>
+
+### Penggunaan APPEND() dan COPY() di Slice
+
+- `APPEND()` : untuk menambahkan kapasitas dari slice atau menggabung 2 slice
+- `COPY()` : untuk Menyalin value dari suatu slice ke slice yang baru
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  var colors = []string{"red", "green", "yellow"}
+  colors = append(colors, "purple")
+
+  copied_colors := make([]string, 10)
+
+  copy(copied_colors, colors) // Menyalin Slice colors ke Slice copied_color
+  fmt.Println(copied_colors)
+}
+```
+
+<br>
+
+### SLICE DENGAN VALUE KOSONG
+
+- Value Kosong di slice adalah Slice NIL
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  var primes []int
+  fmt.Printf("s = %v, len = %d, cap = %d\n", primes, len(primes), cap(primes))
+
+  if primes == nil {
+    fmt.Println("s is nil")
+  }
+}
+```
+
+`Output :`
+`s = [], len = 0, cap = 0`
+`primes is nil`
+<br>
+
 </details>
 
 <details>
