@@ -1,4 +1,4 @@
-_RANGKUMAN DATA STRUCTURE_
+# RANGKUMAN DATA STRUCTURE
 
 <details>
 <summary>1. ARRAY</summary>
