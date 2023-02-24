@@ -236,8 +236,169 @@ func main() {
 
 <details>
 <summary>3. MAP</summary>
+<br>
+
+**Map** adalah struktur data yang menyimpan data dalam bentuk pasangan kunci dan nilai dimana setiap KEY nya unik
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  // Deklarasi Panjang
+  var salary = map[string]int{}
+  fmt.Println(salary)
+
+  // Dekalrasi Panjang dengan Value
+  var salary_a = map[string]int{"umam": 1000, "iswanul": 2000}
+  fmt.Println(salary_a)
+
+  // Deklarasi Pendek
+  salary_b := map[string]int{}
+  fmt.Println(salary_b)
+
+  // Penggunaan MAKE
+  var salary_c = make(map[string]int)
+  salary_c["doe"] = 7000 // assign value
+  fmt.Println(salary_c)
+}
+```
+
+<br>
+
+```go
+package main
+import "fmt"
+func main() {
+
+  // Deklarasikan Panjang dengan value
+  var salary_a = map[string]int{"umam": 1000, "iswanul": 2000}
+  fmt.Println(salary_a, len(salary_a))
+
+  salary_a["nabilah"] = 7000 // assign value
+  fmt.Println(salary_a)
+
+  delete(salary_a, "iswanul") // Menghapus value berdasarkan key
+  fmt.Println(salary_a)
+
+  value, exist := salary_a["umam"] // Mengecek Key yang sudah ada
+  fmt.Println(value, exist)
+
+  for key, value := range salary_a { // Perulangan MAP dengan FOR
+    fmt.Println("->", key, value)
+  }
+}
+```
+
 </details>
 
 <details>
 <summary>4. FUCNTION</summary>
+<br>
+
+**Function** adalah bagian dari kode yang dipanggil dengan nama function itu sendiri. Function adalah cara mudah untuk membagai kode untuk menjadi blok-blok yang berguna. Memudahkan untuk menulis kode yang bersih, rapi, dan modular.
+<br>
+
+### Deklarasi Function
+
+- `func <nama_function> () {<Statment>}`
+- `func <name_function> () <type_return> { <statements> }`
+- `func <name_function> (<parameter>) { <statements> }`
+  <br>
+
+### Contoh Penggunaan Function dengan tidak atau menggunakan Parameter
+
+```go
+package main
+
+import "fmt"
+
+//Function tidak menggunakan Parameter
+func sayHello() {
+  fmt.Println("Hello")
+}
+
+//Function menggunakan Parameter
+func greeting(hour int) {
+  if hour < 12 {
+    fmt.Println("Selamat Pagi")
+  } else if hour < 18 {
+    fmt.Println("Selamat Sore")
+  } else {
+    fmt.Println("Selamat Malam")
+  }
+}
+
+func main() {
+  hour := 15
+  greeting(hour)
+}
+```
+
+<br>
+
+### Function degan Pengembalian value (Single dan Multiple)
+
+```go
+package main
+
+import (
+  "fmt"
+  "math"
+)
+
+// singe return value
+func calculateSquare(side int) int {
+  return side * side
+}
+
+// multiple return value
+func calculateCircle(diameter float64) (float64, float64) {
+  var keliling = math.Pi * math.Pow(diameter/2, 2)
+  var luas = math.Pi * diameter
+  // return 2 value
+  return keliling, luas
+}
+
+func main() {
+  var side = 5
+  wide := calculateSquare(side)
+  fmt.Printf("Luas persegi empat: %d \n\n", wide)
+
+  var diameter float64 = 15
+  keliling, luas := calculateCircle(diameter)
+  fmt.Printf("Luas lingkaran: %.2f \n", keliling)
+  fmt.Printf("Keliling lingkaran: %.2f \n", luas)
+}
+```
+
+<br>
+
+### Function dengan Nama Pengembalian Parameter
+
+```go
+package main
+
+import "fmt"
+
+// function having named return parameter
+func multiplication(a, b int) (mul int) {
+  mul = a * b
+  return
+}
+
+func main() {
+  m := multiplication(5, 5)
+  fmt.Println("5 x 5 = ", m)
+}
+```
+
+<br>
+
+### Type Assignment Otomatis
+
+- `func scale(width, height, scale int) (int, int)`
+- `func scale(width int, height int, scale int) (int, int)`
+
 </details>
