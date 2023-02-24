@@ -52,7 +52,7 @@ func main() {
 }
 ```
 
-`Output : India Canda`
+`Output : India Canada`
 <br>
 
 ### Inisialisasi dengan Array Literal
