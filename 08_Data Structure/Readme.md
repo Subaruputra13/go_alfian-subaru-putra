@@ -1,6 +1,6 @@
 # RANGKUMAN DATA STRUCTURE
 
-<details>
+<details open>
 <summary>1. ARRAY</summary>
 <br>
 
