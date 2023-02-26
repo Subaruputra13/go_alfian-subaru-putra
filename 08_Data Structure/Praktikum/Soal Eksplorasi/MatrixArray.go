@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
 	MatrixArray := [3][3]int{
@@ -22,7 +25,10 @@ func main() {
 		}
 	}
 
+	Mutlak := DiagonalRigth - DiagonalLeft
+	Abs := math.Abs(float64(Mutlak))
+
 	fmt.Println("Diagonal :", DiagonalRigth)
 	fmt.Println("AntiDiagonal :", DiagonalLeft)
-	fmt.Println("Perbedaan Mutlak :", DiagonalLeft-DiagonalRigth)
+	fmt.Println("Perbedaan Mutlak :", Abs)
 }
