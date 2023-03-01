@@ -9,17 +9,17 @@
 </details>
 
 <details>
-<summary>3. POINTER<summary>
-<details>
+<summary>3. POINTER</summary>
+</details>
 
 <details>
-<summary>4. METHOD<summary>
-<details>
+<summary>4. METHOD</summary>
+</details>
 
 <details>
-<summary>5. STRUCT<summary>
-<details>
+<summary>5. STRUCT</summary>
+</details>
 
 <details>
-<summary>6. INTERFACE<summary>
-<details>
+<summary>6. INTERFACE</summary>
+</details>
