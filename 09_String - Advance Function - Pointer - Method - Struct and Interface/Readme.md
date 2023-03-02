@@ -590,4 +590,165 @@ func main() {
 
 <details>
 <summary>6. INTERFACE</summary>
+<br>
+
+**Interface** adalah kumpulan method yang dapat diimplentasikan objek, Karena Interface mendefinisikan perilaku objek.
+<br>
+
+### Contoh Declaration Interface
+
+```go
+type interface_name interface {
+   method_name1 <return_type>
+   method_name2 <return_type>
+   method_name3 <return_type>
+   ...
+   method_namen <return_type>
+}
+```
+
+<br>
+
+### Contoh Implentasi Interface :
+
+```go
+package main
+
+import "fmt"
+
+type calculate interface {
+  large() int
+}
+
+type square struct {
+  side int
+}
+
+func (s square) large() int {
+  return s.side * s.side
+}
+
+func main() {
+  var dimResult calculate
+  dimResult = square{10}
+  fmt.Println("large square :", dimResult.large())
+}
+```
+
+<br>
+
+```go
+Output :
+
+large square : 100
+```
+
+<br>
+
+### Contoh Dari Interface Kosong :
+
+```go
+package main
+
+import "fmt"
+
+func describe(i interface{}) {
+  fmt.Printf("(%v, %T)\n", i, i)
+}
+
+func main() {
+  var i interface{}
+  describe(i)
+
+  i = 42
+  describe(i)
+
+  i = "hello"
+  describe(i)
+}
+```
+
+<br>
+
+```go
+Output :
+
+(<nil>, <nil>)
+(42, int)
+(hello, string)
+```
+
+<br>
+
+### Contoh Code Type Assertion Interface :
+
+```go
+package main
+
+import "fmt"
+import "strings"
+
+func main() {
+  var secret interface{}
+
+  secret = 2
+  var number = secret.(int) * 10
+  fmt.Println(secret, "multiplied by 10 is :", number)
+
+  secret = []string{"apple", "manggo", "banana"}
+  var gruits = strings.Join(secret.([]string), ", ")
+  fmt.Println(gruits, "is my favorite fruits")
+}
+```
+
+<br>
+
+```go
+Output :
+
+2 multiplied by 10 is : 20
+apple, manggo, banana is my favorite fruits
+```
+
+<br>
+
+### Contoh Code Type Switch Interface :
+
+```go
+package main
+
+import (
+  "fmt"
+  "strings"
+)
+
+func explain(i interface{}) {
+  switch i.(type) {
+  case string:
+    fmt.Println("i stored string ", strings.ToUpper(i.(string)))
+  case int:
+    fmt.Println("i stored int", i)
+  default:
+    fmt.Println("i stored something else", i)
+  }
+}
+
+func main() {
+  explain("Hello World")
+  explain(52)
+  explain(true)
+}
+```
+
+<br>
+
+```go
+Output :
+
+i stored string  HELLO WORLD
+i stored int 52
+i stored something else true
+```
+
+<br>
 </details>
