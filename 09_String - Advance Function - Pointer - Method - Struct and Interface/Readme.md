@@ -1,6 +1,6 @@
 # RANGKUMAN STRING, ADVANCE FUNCTION , POINTER , METHOD, STRUCT DAN INTERFACE
 
-<details>
+<details open>
 <summary>1. STRING</summary>
 <br>
 
@@ -193,6 +193,132 @@ func main() {
 
 <details>
 <summary>3. POINTER</summary>
+<br>
+
+**Pointer** adalah variable yang menyimpan alamat memori dari variable lain. Pointer memiliki kekuatan untuk mengubah data yang kita tuju. Memory adalah urutan kotak ditempatkan satu demi satu dalam satu baris
+<br>
+
+Contoh Pointer Declaration :
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  var name string = "John"
+  var nameAddress *string = &name
+  fmt.Println("name (value)   :", name)                // John
+  fmt.Println("name (address) :", &name)               // 0xc000010050
+  fmt.Println("nameAddress (value)   :", *nameAddress) // John
+  fmt.Println("nameAddress (address) :", nameAddress)  // 0xc000010050
+}
+```
+
+<br>
+
+untuk mengubah variable dengan memory yang sama dengen code berikut ini :
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  var name string = "John"
+  var nameAddress *string = &name
+  fmt.Println("name (value)   :", name) // John
+  fmt.Println("name (address) :", &name) // 0xc20800a220
+  fmt.Println("nameAddress (value)   :", *nameAddress) // John
+  fmt.Println("nameAddress (address) :", nameAddress) // 0xc20800a220
+
+  name = "Doe"
+
+  fmt.Println("")
+  fmt.Println("name (value)   :", name) // Doe
+  fmt.Println("name (address) :", &name) // 0xc20800a220
+  fmt.Println("nameAddress (value)   :", *nameAddress) // Doe
+  fmt.Println("nameAddress (address) :", nameAddress) // 0xc20800a220
+}
+```
+
+<br>
+
+### 2 Importan Operator di Pointer :
+
+- `*` Operator :
+
+  - Mencetak pointer varibale
+  - akses value yang di simpan di address
+
+- `&` Operator :
+  - Mengembalikan alamat variabel
+  - akses address variable ke pointer
+
+Contoh Code Zero Value Pointer `<nil>` :
+
+```go
+package main
+
+import (
+  "fmt"
+)
+
+func main() {
+  number_a := 25
+  var number_b *int
+  if number_b == nil {
+    fmt.Println("number_b is", number_b)
+    number_b = &number_a
+    fmt.Println("number_b after init : is", *number_b)
+  }
+}
+```
+
+<br>
+
+OUTPUT :
+
+```go
+Output :
+
+number_b is <nil>
+number_b after init : is 25
+```
+
+<br>
+
+Contoh Code Pointer Declaration dengan Built-In New() :
+
+```go
+package main
+import (
+  "fmt"
+)
+
+func main() {
+  var size = new(int)
+  fmt.Printf("Size value is %d \n", *size)
+  fmt.Printf("Type is %T \n", size)
+  fmt.Printf("Address is %v \n", size)
+  *size = 85
+  fmt.Println("New size value is", *size)
+}
+```
+
+<br>
+
+OUTPUT :
+
+```go
+Output :
+
+Size value is 0
+Type is *int
+Address is 0xc00007c008
+New size value is 85
+```
+
 </details>
 
 <details>
