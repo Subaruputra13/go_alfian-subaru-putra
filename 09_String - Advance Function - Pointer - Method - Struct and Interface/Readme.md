@@ -323,10 +323,269 @@ New size value is 85
 
 <details>
 <summary>4. METHOD</summary>
+<br>
+
+**Method** adalah fungsi yang melekat pada suatu tipe (bisa berupa struct atau tipe data)
+<br>
+
+### Contoh Declarationnya :
+
+```go
+func (receiver StructType) MethodName(parameterList) (returnTypes) {
+// block statement
+}
+```
+
+<br>
+
+### Method Vs Function
+
+```go
+func (receiver StructType) functionName(input type) returnType {
+  // block statement method
+}
+
+func functionName(input type) returnType {
+  // block statement function
+}
+```
+
+<br>
+
+### Cara membuat Method yang simple :
+
+```go
+package main
+
+import "fmt"
+
+type Employee struct {
+    FirstName, LastName string
+}
+
+func (e Employee) fullName() string {
+    return e.FirstName + " " + e.LastName
+}
+
+func main() {
+    e := Employee{
+        FirstName: "Ross",
+        LastName:  "Geller",
+    }
+    fmt.Println(e.fullName())
+}
+```
+
+<br>
+
+### Kenapa Method bukan Fungsi ?
+
+- Membantu kita dalam menulis kode OOP di Golang
+- Method membantu kita untuk menghindari Conflict penamaan
+- Pemanggilan Method jauh lebih mudah dibaca dan di pahami dari pada pemanggilan fungsi
+  <br>
+
+### Contoh Penggunaan Struct untuk OOS(Object Oriented Style) :
+
+```go
+package main
+
+import "fmt"
+
+type Person struct {
+  name string // Both non exported fields.
+  age  int
+}
+
+func (P Person) GetName() string {
+  return P.name + " amazing!"
+}
+
+func (P *Person) IncreaseAge() {
+  P.age = P.age + 1
+}
+
+func main() {
+  PersonA := Person{"John", 50}
+  fmt.Printf("%v\n", PersonA)
+  fmt.Println(PersonA.GetName())
+
+  PersonA.IncreaseAge()
+  fmt.Println(PersonA.age)
+}
+```
+
+<br>
+
+```go
+    Output :
+
+    {John 50}
+    John amazing!
+    51
+```
+
+<br>
+
+### Contoh penggunaan Method yang membantu dari nama yang conflict :
+
+```go
+package main
+
+import (
+  "fmt"
+  "math"
+)
+
+type Rect struct {
+  width  float64
+  height float64
+}
+
+type Circle struct {
+  radius float64
+}
+
+func (r Rect) Area() float64 {
+  return r.width * r.height
+}
+
+func (c Circle) Area() float64 {
+  return math.Pi * c.radius * c.radius
+}
+
+func main() {
+  rect := Rect{5.0, 4.0}
+  cir := Circle{5.0}
+  fmt.Printf("Area of rectangle rect = %0.2f\n", rect.Area())
+  fmt.Printf("Area of circle cir = %0.2f\n", cir.Area())
+}
+```
+
+<br>
+
+```go
+Output :
+
+Area of rectangle rect = 20.00
+Area of circle cir = 78.54
+```
+
+<br>
+
+### Contoh penggunaan Struct Pointer Receiver :
+
+```go
+package main
+
+import "fmt"
+
+type Employee struct {
+  name   string
+  salary int
+}
+
+func (e *Employee) changeName(newName string) {
+  (*e).name = newName
+}
+
+func main() {
+  e := Employee{
+    name:   "Ross Geller",
+    salary: 1200,
+  }
+
+  // e before name change
+  fmt.Println("e before name change =", e)
+  // create pointer to `e`
+  ep := &e
+  // change name
+  ep.changeName("Monica Geller")
+  // e after name change
+  fmt.Println("e after name change =", e)
+```
+
+<br>
+
+```go
+Output :
+
+e before name change = {Ross Geller 1200}
+e after name change = {Monica Geller 1200}
+```
+
 </details>
 
 <details>
 <summary>5. STRUCT</summary>
+<br>
+
+- **Struct** adalah kumpulan definisi variable dan Function, yang dibungkus sebagai tipe data baru dengan nama tertentu.
+  <br>
+
+- **Struct** adalah tipe yang ditentukan pengguna yang berisi kumpulan variable atau fungsi(method) bernama.
+  <br>
+
+- **Declaration Struct** :
+
+```go
+type struct_variable_name struct {
+   field <data_type>
+   field <data_type>
+   ...
+   field <data_type>
+}
+```
+
+<br>
+
+- Initiliasasi dan Akses field :
+
+```go
+package main
+
+import "fmt"
+
+type Person struct {
+  FirstName string
+  LastName  string
+  Age       int
+}
+
+func main() {
+
+  var Person0 Person
+  Person0.FirstName = "Muchson"
+  Person0.LastName = "Ibi"
+  Person0.Age = 27
+  fmt.Println(Person0.FirstName, Person0.LastName, Person0.Age)
+
+  // long declaration with assigned value
+  var Person1 = Person{"Rizky", "Kurniawan", 26}
+  fmt.Println(Person1)
+
+  // long declaration with assigned value each name fields
+  var Person2 = Person{
+    FirstName: "Iswanul",
+    LastName:  "Umam",
+    Age:       25,
+  }
+  fmt.Println(Person2)
+
+  // sort declaration
+  Person3 := Person{"Pranadya", "Bagus", 23}
+  fmt.Println(Person3)
+
+  // short declaration with new keyword
+  Person4 := new(Person)
+  Person4.FirstName = "Muhammad"
+  Person4.LastName = "Ismail"
+  Person4.Age = 30
+  fmt.Println(*Person4)
+
+}
+```
+
 </details>
 
 <details>
