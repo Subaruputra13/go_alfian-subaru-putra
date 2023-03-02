@@ -2,10 +2,193 @@
 
 <details>
 <summary>1. STRING</summary>
-</details>
+<br>
+
+Pada pembahasan ini String mempunyai Package yang sudah di sediakan oleh Golang, yang biasa di pakai yaitu :
+
+- **Len String** = mengetahui panjang string yang ditentukan
+
+  ```go
+    sentence := "Hello";
+    lenSentence := len(sentence)
+    fmt.Println(lenSentence)
+  ```
+
+  <br>
+
+  - **Compare String** = untuk mengetahui apakah kata nya sama atau tidak yang bernilai boolean
+
+  ```go
+    str1 := "abc"
+    str2 := "abd"
+    fmt.Println(str1 == str2)
+  ```
+
+  <br>
+
+  - **Containts String** = untuk mengetahui apakah kata yang sama pada 2 string
+
+  ```go
+     res := strings.Contains(str, substr)
+    fmt.Println(res) // true
+  ```
+
+  <br>
+
+  - **Substring** = untuk mengetahui mengambil bagian dari suatu string
+
+  ```go
+    value := "cat;dog"
+    // Take substring from index 4 to length of string.
+    substring := value[4:len(value)]
+    fmt.Println(substring)
+  ```
+
+  <br>
+
+- **Replace String** = untuk menghapus bagian dari suatu string
+
+  ```go
+    // 5. Replace
+    s := "this[things]I would like to remove"
+    t := strings.Replace(s, "[", "", -1)
+    fmt.Printf("%s\n", t)
+  ```
+
+  <br>
+
+  - **Insert String** = untuk memasukan sebuah kata ke String
+
+  ```go
+    // 6. Insert
+    p := "green"
+    index := 2
+    q := p[:index] + "HI" + p[index:]
+    fmt.Println(p, q)
+  ```
+
+  </details>
 
 <details>
 <summary>2. ADVANCE FUNCTION</summary>
+<br>
+
+### Variadic Function
+
+Berfungsi untuk :
+
+- Untuk melewatkan pembuatan Slice untuk meneruskan ke func
+- Ketika jumlah parameter di input tidak dapat diketahui
+  <br>
+
+```go
+package main
+
+import (
+  "fmt"
+)
+
+func sum(numbers  ...int) int { //variadic
+
+  var total int = 0
+  for _, number := range numbers {
+    total += number
+  }
+  return total
+}
+
+func main() {
+  avg := sum(2, 4, 3, 5)
+  fmt.Println(avg)
+}
+```
+
+<br>
+
+### Anonymous Function == Literal Function
+
+Anonymous Function adalah fungsi yang tidak mengandug nama apapun
+<br>
+
+Contoh Code :
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  // Anonymous function
+  func() {
+    fmt.Println("Welcome! to GeeksforGeeks")
+  }()
+
+  // Assigning an anonymous function to a variable
+  value := func() {
+    fmt.Println("Welcome! to GeeksforGeeks")
+  }
+  value()
+
+  // Passing arguments in anonymous function
+  func(sentence string) {
+    fmt.Println(sentence)
+  }("GeeksforGeeks")
+}
+```
+
+<br>
+
+### Closure
+
+**Closure** adalah tipe khusus dari anonymous function yang mereferensikan di luar fungsi itu sendiri. Dalam hal ini kita akan menggunakan variabel yang tidak diteruskan ke fungsi sebagai parameter, melainkan tersedia saat fungsi dideklarasikan.
+<br>
+
+Contoh Code :
+
+```go
+package main
+
+import "fmt"
+
+func newCounter() func() int {
+  count := 0 // Closure
+  return func() int {
+    count += 1
+    return count // Closure
+  }
+}
+
+func main() {
+  counter := newCounter()
+  fmt.Println(counter())
+  fmt.Println(counter())
+}
+```
+
+<br>
+
+### Defer Function
+
+**Defer Function** adalah fungsi yang hanya di jalakan setelah fungsi induknya dikembalikan. Pengembalian berganda juga dapat digunakan, mereka dijalankan sebagai tumpukan, satu per satu.
+<br>
+
+Contoh Code :
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  defer func() {
+    fmt.Println("Later")
+  }() //Defer Func
+
+  fmt.Println("First") //dijalakan Pertama
+
+	// Setelah itu Defer Func dijalankan di sini
+```
+
 </details>
 
 <details>
