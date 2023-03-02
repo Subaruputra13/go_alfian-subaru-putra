@@ -16,7 +16,7 @@ Pada pembahasan ini String mempunyai Package yang sudah di sediakan oleh Golang,
 
   <br>
 
-  - **Compare String** = untuk mengetahui apakah kata nya sama atau tidak yang bernilai boolean
+- **Compare String** = untuk mengetahui apakah kata nya sama atau tidak yang bernilai boolean
 
   ```go
     str1 := "abc"
@@ -26,7 +26,7 @@ Pada pembahasan ini String mempunyai Package yang sudah di sediakan oleh Golang,
 
   <br>
 
-  - **Containts String** = untuk mengetahui apakah kata yang sama pada 2 string
+- **Containts String** = untuk mengetahui apakah kata yang sama pada 2 string
 
   ```go
      res := strings.Contains(str, substr)
@@ -35,7 +35,7 @@ Pada pembahasan ini String mempunyai Package yang sudah di sediakan oleh Golang,
 
   <br>
 
-  - **Substring** = untuk mengetahui mengambil bagian dari suatu string
+- **Substring** = untuk mengetahui mengambil bagian dari suatu string
 
   ```go
     value := "cat;dog"
@@ -57,7 +57,7 @@ Pada pembahasan ini String mempunyai Package yang sudah di sediakan oleh Golang,
 
   <br>
 
-  - **Insert String** = untuk memasukan sebuah kata ke String
+- **Insert String** = untuk memasukan sebuah kata ke String
 
   ```go
     // 6. Insert
