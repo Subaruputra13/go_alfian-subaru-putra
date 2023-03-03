@@ -20,7 +20,7 @@ func (s *student) Encode() string {
 		if char >= 'a' && char <= 'z' {
 			char = 'a' + 'z' - char
 		}
-		nameEncode = nameEncode + string(char)
+		nameEncode += string(char)
 	}
 
 	return nameEncode
@@ -33,7 +33,7 @@ func (s *student) Decode() string {
 		if char >= 'a' && char <= 'z' {
 			char = 'a' + 'z' - char
 		}
-		nameDecode = nameDecode + string(char)
+		nameDecode += string(char)
 	}
 
 	return string(nameDecode)
