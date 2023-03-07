@@ -1,6 +1,6 @@
 # RANGKUMAN Recursive - Number Theory - Sorting - Searching
 
-<details>
+<details open>
 <summary>1. RECURSIVE</summary>
 <br>
 
