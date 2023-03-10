@@ -19,7 +19,7 @@ func main() {
 	c := make(chan int)
 
 	go kelipatan(c)
-	c <- 20
+	c <- 25
 
 	fmt.Println("End Main")
 }
