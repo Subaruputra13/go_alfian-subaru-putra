@@ -12,8 +12,8 @@ func init() {
 }
 
 func getBilBulat(x int) {
-	for i := 1; i <= x; i++ {
-		if x%i == 0 {
+	for i := 1; i < 50; i++ {
+		if i%7 == 0 {
 			fmt.Printf("%d at time %v\n", i, time.Since(start))
 			time.Sleep(10 * time.Millisecond)
 		}
