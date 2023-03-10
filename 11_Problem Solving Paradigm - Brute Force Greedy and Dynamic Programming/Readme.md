@@ -1,6 +1,6 @@
 # RANGKUMAN PROBLEM SOLVING PARADIGM
 
-<details>
+<details open>
 <summary>1. APA ITU PROBLEM SOLVING PARADIGM</summary>
 <br>
 
