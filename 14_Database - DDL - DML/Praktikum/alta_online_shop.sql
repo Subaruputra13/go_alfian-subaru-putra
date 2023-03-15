@@ -97,5 +97,32 @@ alter table kurir RENAME shipping;
 //menghapus tabel shipping
 drop table shipping;
 
+//membuat tabel payment_method_description one to one dengan tabel payment_method
+create table payment_method_description (
+id int AUTO_INCREMENT PRIMARY KEY,
+payment_method_id int(11),
+description varchar(100),
+created_at timestamp not null default current_timestamp,
+updated_at timestamp not null default current_timestamp,
+FOREIGN KEY (payment_method_id) REFERENCES payment_method(id));
+
+//membuat tabel user_address one to many dengan tabel users
+create table alamat (
+id int AUTO_INCREMENT PRIMARY KEY,
+alamat varchar(255),
+user_id int,
+created_at timestamp not null default current_timestamp,
+update_at timestamp not null default current_timestamp,
+FOREIGN KEY (user_id) REFERENCES users(id));
+
+//membuat tabel user_payment_method_detials many to many dengan tabel users dan payment_method
+create table user_payment_method_detials (
+user_id int(11),
+payment_method_id int(11),
+created_at timestamp not null default current_timestamp,
+update_at timestamp not null default current_timestamp,
+FOREIGN KEY (user_id) REFERENCES users(id),
+FOREIGN KEY (payment_method_id) REFERENCES payment_method(id));
+
 
 
