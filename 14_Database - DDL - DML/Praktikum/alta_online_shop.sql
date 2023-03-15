@@ -27,14 +27,12 @@ update_at timestamp);
 create table transaction (
 id int(11) AUTO_INCREMENT PRIMARY KEY,
 user_id int(11),
-payment_method_id int(11),
 status varchar(10),
 total_quanty int(11),
 total_price int,
 created_at timestamp,
 update_at timestamp,
-FOREIGN KEY (user_id) REFERENCES users(id),
-FOREIGN KEY (payment_method_id) REFERENCES payment_method(id));
+FOREIGN KEY (user_id) REFERENCES users(id));
 
 //membuat tabel operator
 create table operator (
