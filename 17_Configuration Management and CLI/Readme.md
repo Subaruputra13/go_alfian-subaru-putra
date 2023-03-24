@@ -105,4 +105,5 @@ Utility :
 - `history`
 - `grep`
 - `locate`
+<br>
 </details>
