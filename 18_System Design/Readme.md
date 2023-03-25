@@ -1,6 +1,6 @@
 # RANGKUMAN SYSTEM DESIGN
 
-<details>
+<details open>
 <summary>1. DISAIN DIAGRAM</summary>
 <br>
 
