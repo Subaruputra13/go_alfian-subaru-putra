@@ -1,6 +1,6 @@
 # RANGKUMAN RESTFUL API
 
-<details>
+<details open>
 <summary>1. APA ITU API</summary>
 <br>
 
