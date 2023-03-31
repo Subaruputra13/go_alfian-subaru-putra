@@ -16,9 +16,9 @@ func GetBookController(c echo.Context) error {
 		return c.JSON(http.StatusBadRequest, err.Error())
 	}
 
-	return c.JSON(http.StatusOK, map[string]interface{}{
-		"status": "success get all book",
-		"books":  books,
+	return c.JSON(http.StatusOK, models.Response{
+		Message: "success get all book",
+		Data:    books,
 	})
 }
 
@@ -33,9 +33,9 @@ func CreateBookController(c echo.Context) error {
 		return c.JSON(http.StatusBadRequest, err.Error())
 	}
 
-	return c.JSON(http.StatusOK, map[string]interface{}{
-		"status": "success create book",
-		"book":   books,
+	return c.JSON(http.StatusOK, models.Response{
+		Message: "success create book",
+		Data:    books,
 	})
 }
 
@@ -49,9 +49,9 @@ func GetBookByIdController(c echo.Context) error {
 		return c.JSON(http.StatusBadRequest, err.Error())
 	}
 
-	return c.JSON(http.StatusOK, map[string]interface{}{
-		"status": "success get book by id",
-		"book":   books,
+	return c.JSON(http.StatusOK, models.Response{
+		Message: "success get book by id",
+		Data:    books,
 	})
 }
 
@@ -68,9 +68,9 @@ func UpdateBookByIdController(c echo.Context) error {
 		return c.JSON(http.StatusBadRequest, err.Error())
 	}
 
-	return c.JSON(http.StatusOK, map[string]interface{}{
-		"status": "success update book by id",
-		"book":   books,
+	return c.JSON(http.StatusOK, models.Response{
+		Message: "success update book by id",
+		Data:    books,
 	})
 }
 
@@ -84,8 +84,8 @@ func DeleteBookByIdController(c echo.Context) error {
 		return c.JSON(http.StatusBadRequest, err.Error())
 	}
 
-	return c.JSON(http.StatusOK, map[string]interface{}{
-		"status": "success delete book by id",
+	return c.JSON(http.StatusOK, models.Response{
+		Message: "success delete book by id",
 	})
 
 }

@@ -16,9 +16,9 @@ func GetUserControllers(c echo.Context) error {
 		return c.JSON(http.StatusBadRequest, err.Error())
 	}
 
-	return c.JSON(http.StatusOK, map[string]interface{}{
-		"status": "success get all user",
-		"user":   users,
+	return c.JSON(http.StatusOK, models.Response{
+		Message: "success get all user",
+		Data:    users,
 	})
 }
 
@@ -32,9 +32,9 @@ func GetUserByIdController(c echo.Context) error {
 		return c.JSON(http.StatusBadRequest, err.Error())
 	}
 
-	return c.JSON(http.StatusOK, map[string]interface{}{
-		"status": "success get user by id",
-		"user":   user,
+	return c.JSON(http.StatusOK, models.Response{
+		Message: "success get user by id",
+		Data:    user,
 	})
 }
 
@@ -49,9 +49,9 @@ func CreateUserController(c echo.Context) error {
 		return c.JSON(http.StatusBadRequest, err.Error())
 	}
 
-	return c.JSON(http.StatusOK, map[string]interface{}{
-		"status": "success create user",
-		"user":   user,
+	return c.JSON(http.StatusOK, models.Response{
+		Message: "success create user",
+		Data:    user,
 	})
 }
 
@@ -68,9 +68,9 @@ func UpdateUserByIdController(c echo.Context) error {
 		return c.JSON(http.StatusBadRequest, err.Error())
 	}
 
-	return c.JSON(http.StatusOK, map[string]interface{}{
-		"status": "success update user by id",
-		"user":   user,
+	return c.JSON(http.StatusOK, models.Response{
+		Message: "success update user by id",
+		Data:    user,
 	})
 }
 
@@ -84,7 +84,7 @@ func DeleteUserByIdController(c echo.Context) error {
 		return c.JSON(http.StatusBadRequest, err.Error())
 	}
 
-	return c.JSON(http.StatusOK, map[string]interface{}{
-		"status": "success delete user by id",
+	return c.JSON(http.StatusOK, models.Response{
+		Message: "success delete user by id",
 	})
 }
