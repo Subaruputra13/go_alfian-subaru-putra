@@ -10,27 +10,18 @@
 
 ### DATABASE MIGRATION
 
-<br>
-
 Cara untuk memperbarui versi database agar sesuai dengan perubahan versi aplikasi.Perubahan dapat berupa peningkatan ke versi terbaru atau pengembalian ke versi sebelumnya.
 <br>
 
 ### KENAPA DB MIGRATION
 
-<br>
-
 Kesederhanaan pembaruan basis data, Kesederhanaan pengembalian basis data Melacak perubahan pada struktur basis data Riwayat struktur basis data ditulis pada kode Selalu kompatibel dengan perubahan versi aplikasi
 <br>
 
-### CARA INSTALL GORM
+### CARA INSTALL GORM :
 
-<br>
-
-`go get -u gorm.io/gorm` -> untuk install gorm
-
-<br>
-
-`go get -u gorm.io/driver/mysql` -> untuk install driver mysql
+- `go get -u gorm.io/gorm` -> untuk install gorm
+- `go get -u gorm.io/driver/mysql` -> untuk install driver mysql
 
 </details>
 
