@@ -7,11 +7,14 @@ import (
 
 // Get all user
 func GetUser() (users []models.User, err error) {
-	err = config.DB.Find(&users).Error
+	err = config.DB.Preload("Blog").Find(&users).Error
 
 	if err != nil {
 		return []models.User{}, err
 	}
+
+	//make to return blog data
+
 	return
 }
 
@@ -29,7 +32,7 @@ func CreateUser(user models.User) (models.User, error) {
 func GetUserById(id any) (models.User, error) {
 	var user models.User
 
-	err := config.DB.Where("id = ?", id).First(&user).Error
+	err := config.DB.Preload("Blog").Where("id = ?", id).First(&user).Error
 
 	if err != nil {
 		return models.User{}, err

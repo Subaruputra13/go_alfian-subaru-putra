@@ -50,5 +50,6 @@ func InitDB() {
 
 func InitMigrate() {
 	// Migrate the schema
-	DB.AutoMigrate(&models.User{}, &models.Book{})
+	DB.AutoMigrate(&models.User{}, &models.Book{}, &models.Blog{})
+
 }
