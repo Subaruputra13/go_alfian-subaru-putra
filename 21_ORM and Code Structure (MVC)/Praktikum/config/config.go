@@ -18,6 +18,11 @@ type Config struct {
 	DB_Name     string
 }
 
+func Init() {
+	InitDB()
+	InitMigrate()
+}
+
 func InitDB() {
 	config := Config{
 		DB_Username: "root",
@@ -41,12 +46,9 @@ func InitDB() {
 	if err != nil {
 		panic(err)
 	}
-	InitMigrate()
-
 }
 
 func InitMigrate() {
-
 	// Migrate the schema
 	DB.AutoMigrate(&models.User{}, &models.Book{})
 }
