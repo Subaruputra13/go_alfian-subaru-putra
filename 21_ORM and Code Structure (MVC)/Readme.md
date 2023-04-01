@@ -27,6 +27,9 @@ Kesederhanaan pembaruan basis data, Kesederhanaan pengembalian basis data Melaca
 <br>
 
 `go get -u gorm.io/gorm` -> untuk install gorm
+
+<br>
+
 `go get -u gorm.io/driver/mysql` -> untuk install driver mysql
 
 </details>
