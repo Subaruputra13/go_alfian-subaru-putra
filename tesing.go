@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	fmt.Print("Hello, ")
 	fmt.Println(sum(1, 2))
 }
 
