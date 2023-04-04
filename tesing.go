@@ -3,5 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Print("Playing with GoLang")
+	fmt.Println(sum(1, 2))
+}
+
+func sum(a int, b int) int {
+	return a + b
 }
