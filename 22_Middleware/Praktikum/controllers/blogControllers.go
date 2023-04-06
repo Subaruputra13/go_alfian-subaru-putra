@@ -5,7 +5,7 @@ import (
 	"praktikum/lib/database"
 	"praktikum/models"
 
-	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo"
 )
 
 func GetBlogController(c echo.Context) error {

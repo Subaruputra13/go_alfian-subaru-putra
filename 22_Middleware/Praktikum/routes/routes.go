@@ -2,8 +2,9 @@ package routes
 
 import (
 	"praktikum/controllers"
+	"praktikum/middleware"
 
-	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo"
 )
 
 func New() *echo.Echo {
@@ -30,5 +31,12 @@ func New() *echo.Echo {
 	e.PUT("/blogs/:id", controllers.UpdateBlogByIdController)
 	e.DELETE("/blogs/:id", controllers.DeleteBlogByIdController)
 
+	// Midlleware
+	middleware.LogMiddleware(e)
+
+	//Auth Basic
+	// eAuthBasic := e.Group("/auth")
+	// eAuthBasic.Use(mid.BasicAuth(middleware.BasicAuthDB))
+	// eAuthBasic.GET("/users", controllers.GetUserControllers)
 	return e
 }
