@@ -62,3 +62,15 @@ func DeleteUser(id any) (interface{}, error) {
 
 	return "success delete user", nil
 }
+
+// Login user JWT
+func LoginUser(user models.User) (models.User, error) {
+
+	err := config.DB.Where("email = ? AND password = ?", user.Email, user.Password).First(&user).Error
+
+	if err != nil {
+		return models.User{}, err
+	}
+
+	return user, nil
+}
