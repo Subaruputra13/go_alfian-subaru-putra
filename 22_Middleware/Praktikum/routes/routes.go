@@ -16,6 +16,7 @@ func New() *echo.Echo {
 
 	// Midlleware
 	middleware.LogMiddleware(e)
+	e.Pre(mid.RemoveTrailingSlash())
 
 	// User Controller
 	us := e.Group("/users")
