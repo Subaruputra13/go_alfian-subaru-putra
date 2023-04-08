@@ -10,3 +10,8 @@ type User struct {
 	Token    string `gorm:"-"`
 	Blog     []Blog `gorm:"constraint:OnUpdate:CASCADE,OnDelete:SET NULL;"`
 }
+
+type UserResponse struct {
+	Message string
+	Data    []User
+}
