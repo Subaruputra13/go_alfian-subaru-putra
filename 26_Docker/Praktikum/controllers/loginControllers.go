@@ -32,7 +32,7 @@ func LoginUserController(c echo.Context) error {
 	}
 
 	return c.JSON(http.StatusOK, models.Response{
-		Message: "success create user",
+		Message: "success Login!",
 		Data:    user,
 	})
 }

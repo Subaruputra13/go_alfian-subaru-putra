@@ -23,7 +23,7 @@ func InitDB() {
 		DB_Username: "alta",
 		DB_Password: "root",
 		DB_Port:     "3306",
-		DB_Host:     "192.168.1.8",
+		DB_Host:     "192.168.1.2",
 		DB_Name:     "testing_golang",
 	}
 
