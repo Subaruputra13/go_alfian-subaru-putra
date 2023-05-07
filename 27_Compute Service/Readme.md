@@ -2,7 +2,6 @@
 
 <details open>
 <summary>1. PENGERTIAN COMPUTE SERVICE</sumary>
-<br>
 
 - Deployment adalah suatu proses untuk menyebarkan aplikasi yang telah dibuat oleh developer agar dapat diakses oleh publik.
 
