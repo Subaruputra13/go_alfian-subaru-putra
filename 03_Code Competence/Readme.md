@@ -2,8 +2,6 @@
 
 ## Kriteria
 
-<br>
-
 - Menggunakan jwt authentication untuk login
 - Menggunakan UUID untuk id items
 
