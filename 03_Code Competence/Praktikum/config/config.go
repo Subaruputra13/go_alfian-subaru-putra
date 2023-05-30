@@ -20,10 +20,10 @@ type Config struct {
 
 func InitDB() *gorm.DB {
 	config := Config{
-		DB_Username: "alta",
-		DB_Password: "root",
-		DB_Port:     "3306",
-		DB_Host:     "localhost",
+		DB_Username: "doadmin",
+		DB_Password: "AVNS_FY3AFcMESs6TsD-hfFc",
+		DB_Port:     "25060",
+		DB_Host:     "inventron-do-user-13944740-0.b.db.ondigitalocean.com",
 		DB_Name:     "code_competence",
 	}
 
